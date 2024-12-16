@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -36,6 +37,15 @@ namespace TestConsoleApp.Homework2
             else if (gender.Equals("Female") || gender.Equals("female") )
                 Console.WriteLine("You are a woman!");
             else Console.WriteLine("You haven't specified you gender!");
+        }
+
+        public void DisplayPersonDetails()
+        {
+            Console.WriteLine($"Person details are as follows: \n" +
+                    $"- First Name: {firstName} \n" +
+                    $"- Last Name: {lastName} \n" +
+                    $"- Age: {age} \n" +
+                    $"- Gender: {gender}");
         }
 
     }

@@ -29,12 +29,7 @@ person1.age = int.Parse(yourAge);
 Console.WriteLine("Please type in your gender:");
 person1.gender = Console.ReadLine();
 
-Console.WriteLine($"Person details are as follows: \n" +
-        $"- First Name: {person1.firstName} \n" +
-        $"- Last Name: {person1.lastName} \n" +
-        $"- Age: {person1.age} \n" +
-        $"- Gender: {person1.gender}");
-
+person1.DisplayPersonDetails();
 person1.IsOld();
 person1.ShowGender();
        
