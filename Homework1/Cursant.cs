@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Reflection;
+using TestConsoleApp.Homework_Lists;
 using TestConsoleApp.Homework2;
 
 
@@ -32,4 +33,6 @@ person1.gender = Console.ReadLine();
 person1.DisplayPersonDetails();
 person1.IsOld();
 person1.ShowGender();
-       
+
+ListItems listItems = new ListItems();
+listItems.CreateLists();
